@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин гаджетов «Device»</title>
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="main-header">
@@ -45,30 +46,91 @@
       <h1 class="visually-hidden">Магазин гаджетов «Device»</h1>
 
       <section class="hot-item">
-        <h2 class="visually-hidden">Самая длинная селфи палка</h2>
+        <h2 class="visually-hidden">Самый популярные товары магазина</h2>
+        <ul class="hot-item-all">
+          <li class="hot-item-selfi">
+            <div>
+              <h3 class="visually-hidden">Самая длинная селфи палка</h3>
 
-        <img src="img/hot-item-slider-1.png" width="384" height="486" alt="Фото самой длинной палки для селфи">
+              <img src="img/hot-item-slider-1.png" width="384" height="486" alt="Фото самой длинной палки для селфи">
 
-        <b>Делай селфи как Бен Стиллер!</b>
-        <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
-        <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <b>Делай селфи как Бен Стиллер!</b>
+              <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
+              <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
-        <a class="button" href="#">Подробнее</a>
+              <a class="button" href="#">Подробнее</a>
 
-        <table class="hot-item-specifications">
-          <tr>
-            <td>8,5 м</td>
-            <td>5 кг</td>
-            <td>Карбон</td>
-          </tr>
-          <tr>
-            <th>Длина палки</th>
-            <th>Вес палки</th>
-            <th>Материал</th>
-          </tr>
-        </table>
+              <table class="hot-item-specifications">
+                <tr>
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+                <tr>
+                  <th>Длина палки</th>
+                  <th>Вес палки</th>
+                  <th>Материал</th>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="hot-item-clock">
+            <div>
+              <h3 class="visually-hidden">Мотивирующие фитнес-браслеты</h3>
 
-        <!-- Здесь будет переключатель -->
+              <img src="img/hot-item-slider-2.png" width="345" height="485" alt="Фото фитнес-браслета">
+
+              <b>Худеем правильно!</b>
+              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+
+              <a class="button" href="#">Подробнее</a>
+
+              <table class="hot-item-specifications">
+                <tr>
+                  <td>48 часов</td>
+                </tr>
+                <tr>
+                  <th>Без подзарядки</th>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="hot-item-kopter">
+            <div>
+              <h3 class="visually-hidden">Квадрокоптер с лазером</h3>
+
+              <img src="img/hot-item-slider-3.png" width="526" height="334" alt="Фото квадрокоптера с лазером">
+
+              <b>Порхает как бабочка, жалит как пчела!</b>
+              <p>Это обычный, на первый взгляд, квадркоптер оснащен мощным лазером, замаскированым под стандартную камеру.</p>
+
+              <a class="button" href="#">Подробнее</a>
+
+              <table class="hot-item-specifications">
+                <tr>
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr>
+                  <th>Длина полета</th>
+                  <th>Радиус поражения</th>
+                </tr>
+              </table>
+            </div>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="hot-item-button">
+            <button class="button-slide-item" type="button">Первый слайд</button>
+          </li>
+          <li class="hot-item-button">
+            <button class="button-slide-item" type="button">Второй слайд</button>
+          </li>
+          <li class="hot-item-button">
+            <button class="button-slide-item" type="button">Третий слайд</button>
+          </li>
+        </ul>
       </section>
 
       <section class="category">
