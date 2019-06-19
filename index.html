@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин гаджетов «Device»</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -54,9 +56,8 @@
 
               <img src="img/hot-item-slider-1.png" width="384" height="486" alt="Фото самой длинной палки для селфи">
 
-              <b>Делай селфи как Бен Стиллер!</b>
-              <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
-              <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <b>Делай селфи,<br>как Бен Стиллер!</b>
+              <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
               <a class="button" href="#">Подробнее</a>
 
@@ -101,7 +102,7 @@
 
               <img src="img/hot-item-slider-3.png" width="526" height="334" alt="Фото квадрокоптера с лазером">
 
-              <b>Порхает как бабочка, жалит как пчела!</b>
+              <b>Порхает как бабочка,<br>жалит как пчела!</b>
               <p>Это обычный, на первый взгляд, квадркоптер оснащен мощным лазером, замаскированым под стандартную камеру.</p>
 
               <a class="button" href="#">Подробнее</a>
@@ -112,7 +113,7 @@
                   <td>50 м</td>
                 </tr>
                 <tr>
-                  <th>Длина полета</th>
+                  <th>Дальность полета</th>
                   <th>Радиус поражения</th>
                 </tr>
               </table>
@@ -139,37 +140,49 @@
         <ul class="category-list">
           <li class="category-item">
             <a href="#">
-              <img src="img/popular-vr.svg" width="97" height="55" alt="Виртуальная реальность">
+              <p class="category-item-image">
+                <img src="img/popular-vr.svg" width="97" height="55" alt="Виртуальная реальность">
+              </p>
               <h3>Виртуальная реальность</h3>
             </a>
           </li>
           <li class="category-item">
             <a href="catalog.html">
-              <img src="img/popular-monopod.svg" width="86" height="117" alt="Моноподы для селфи">
-              <h3>Моноподы для селфи</h3>
+              <p class="category-item-image">
+                <img src="img/popular-monopod.svg" width="86" height="117" alt="Моноподы для селфи">
+              </p>
+              <h3>Моноподы<br>для селфи</h3>
             </a>
           </li>
           <li class="category-item">
             <a href="#">
-              <img src="img/popular-cam.svg" width="71" height="87" alt="Экшн-камеры">
+              <p class="category-item-image">
+                <img src="img/popular-cam.svg" width="71" height="87" alt="Экшн-камеры">
+              </p>
               <h3>Экшн-камеры</h3>
             </a>
           </li>
           <li class="category-item">
             <a href="#">
-              <img src="img/popular-fitnes.svg" width="107" height="65" alt="Фитнес-браслеты">
+              <p class="category-item-image">
+                <img src="img/popular-fitnes.svg" width="107" height="65" alt="Фитнес-браслеты">
+              </p>
               <h3>Фитнес-браслеты</h3>
             </a>
           </li>
           <li class="category-item">
             <a href="#">
-              <img src="img/popular-clock.svg" width="56" height="98" alt="Умные часы">
+              <p class="category-item-image">
+                <img src="img/popular-clock.svg" width="56" height="98" alt="Умные часы">
+              </p>
               <h3>Умные часы</h3>
             </a>
           </li>
           <li class="category-item">
             <a href="#">
-              <img src="img/poppular-kopter.svg" width="132" height="69" alt="Квадрокоптеры">
+              <p class="category-item-image">
+                <img src="img/poppular-kopter.svg" width="132" height="69" alt="Квадрокоптеры">
+              </p>
               <h3>Квадрокоптеры</h3>
             </a>
           </li>
@@ -179,14 +192,14 @@
       <section class="additional-services">
         <h2 class="visually-hidden">Дополнительные услуги</h2>
 
-        <ul>
-          <li class="button-additional-services">
-            <button class="button additional-services-delivery" type="button">Доставка</button>
+        <ul class="button-additional-services">
+          <li>
+            <button class="button additional-services-delivery current-button-services" type="button">Доставка</button>
           </li>
-          <li class="button-additional-services">
+          <li>
             <button class="button additional-services-warranty" type="button">Гарантия</button>
           </li>
-          <li class="button-additional-services">
+          <li>
             <button class="button additional-services-credit" type="button">Кредит</button>
           </li>
         </ul>
@@ -212,7 +225,7 @@
       </section>
 
       <section class="logotypes-brands">
-        <h2>Логотипы брендов</h2>
+        <h2 class="visually-hidden">Логотипы брендов</h2>
         <img src="img/logotypes-dji.png" width="260" height="100" alt="Бренд Dji">
         <img src="img/logotypes-sp.jpg" width="260" height="100" alt="Бренд SP Gadgets">
         <img src="img/logotypes-go.jpg" width="260" height="100" alt="Бренд GoPro">
@@ -224,9 +237,9 @@
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         <ul class="info-list">
-          <li class="info-list-item">Деловые Линии</li>
-          <li class="info-list-item">Автотрейдинг</li>
-          <li class="info-list-item">ЖелДорЭкспедиция</li>
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
         </ul>
         <a class="button" href="#">Подробнее о нас</a>
       </section>
@@ -269,7 +282,7 @@
         </ul>
       </div>
       <p class="footer-copyright">
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="button-copyright" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>
 
@@ -286,9 +299,9 @@
         </p>
         <p>
           <label class="write-us-label" for="user-text">Текст письма:</label>
-          <textarea class="write-us-text" id="user-text" name="text" cols="50" rows="20" placeholder="В свободной форме"></textarea>
+          <textarea class="write-us-text" id="user-text" name="text" cols="100" rows="10" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button" type="submit">Отправить</button>
+       <button class="button" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
