@@ -69,7 +69,7 @@
                 <label for="filter-black">Черный</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-white">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-white" disabled>
                 <label for="filter-white">Белый</label>
               </li>
               <li class="filter-option">
@@ -104,14 +104,14 @@
 
         <div class="sort">
           <h3>Сортировка:</h3>
-          <ul>
-            <li><a href="#">По цене</a></li>
+          <ul class="sort-option">
+            <li><a class="sort-option-current" href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По популярности</a></li>
           </ul>
-          <ul>
-            <li><a href="#">вниз</a></li>
+          <ul class="sort-up-down">
             <li><a href="#">вверх</a></li>
+            <li><a class="sort-option-current" href="#">вниз</a></li>
           </ul>
         </div>
     </section>
@@ -184,7 +184,7 @@
 
     <footer class="main-footer">
       <nav>
-        <a href="#"><img class="footer-logo" src="img/logo-footer.svg" width="163" height="36" alt="Логотип магазина «Device»"></a>
+        <a href="index.html"><img class="footer-logo" src="img/logo-footer.svg" width="163" height="36" alt="Логотип магазина «Device»"></a>
         <ul class="footer-nav-user">
           <li class="footer-nav-login"><a href="#">Валентин Петухов</a></li>
           <li class="footer-nav-exit-link"><a href="#">Выйти</a></li>

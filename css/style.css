@@ -47,10 +47,27 @@ a {
   border: none;
 }
 
+.button:hover,
+.button:focus {
+  /* background-color: #663d15; */
+}
+
+.button:active  {
+  /* opacity: 0.3; */
+}
+
 .main-header {
   color: #464646;
 
   background-color: #f7e296;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+  opacity: 0.6;
+}
+.main-header-logo:active {
+  opacity: 0.3;
 }
 
 .main-nav-search input {
@@ -60,6 +77,21 @@ a {
 
   background-color: #f7e296;
   border: none;
+}
+
+.main-nav-search input:hover {
+  opacity: 0.6;
+
+  outline: none;
+  border: none;
+}
+
+.main-nav-search input:focus,
+.main-nav-search input:active {
+  opacity: 1;
+
+  outline: none;
+  border-bottom: 2px solid #000000;
 }
 
 .user-navigation,
@@ -73,6 +105,18 @@ a {
   text-decoration: none;
 }
 
+.user-navigation a:hover,
+.user-navigation a:focus,
+.shopping-navigation a:hover,
+.shopping-navigation a:focus {
+  opacity: 0.6;
+}
+
+.user-navigation a:active,
+.shopping-navigation a:active {
+  opacity: 0.3;
+}
+
 .catalog-nav-button {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -83,6 +127,15 @@ a {
   text-transform: uppercase;
 }
 
+.catalog-nav-button:hover,
+.catalog-nav-button:focus {
+  opacity: 0.6;
+}
+
+.catalog-nav-button:active {
+  opacity: 0.3;
+}
+
 .catalog-navigation {
   list-style: none;
 }
@@ -90,6 +143,15 @@ a {
 .catalog-navigation a {
   color: #000000;
   text-decoration: none;
+}
+
+.catalog-navigation a:hover,
+.catalog-navigation a:focus {
+  opacity: 0.6;
+}
+
+.catalog-navigation a:active {
+  opacity: 0.3;
 }
 
 .site-navigation {
@@ -105,6 +167,15 @@ a {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  opacity: 0.6;
+}
+
+.site-navigation a:active {
+  opacity: 0.3;
 }
 
 .hot-item-all {
@@ -145,6 +216,17 @@ a {
   background-color: #f7e296;
 }
 
+.category-item-link:hover .category-item-image,
+.category-item-link:focus .category-item-image {
+  background-color: #f0c52e;
+}
+
+.category-item-link:active img {
+  opacity: 0.3;
+
+  background-color: #f0c52e;
+}
+
 .category-list h3 {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -152,6 +234,10 @@ a {
   font-weight: 800;
   color: #000000;
   letter-spacing: 0.18px;
+}
+
+.category-item-link:active h3 {
+  opacity: 0.3;
 }
 
 .additional-services {
@@ -232,11 +318,24 @@ a {
   line-height: 24px;
   letter-spacing: 0.14px;
   color: #000000;
-  opacity: 0.3;
 }
 
 .breadcrumbs a {
   color: #000000;
+  opacity: 0.3;
+}
+
+.breadcrumbs-current {
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.1;
 }
 
 .filters h2 {
@@ -277,6 +376,23 @@ a {
   letter-spacing: 0.14px;
 }
 
+.filter-input:hover,
+.filter-input:focus {
+  opacity: 0.6;
+}
+
+.filter-input:active{
+  opacity: 1;
+}
+
+.filter-input:disabled {
+  opacity: 0.25;
+}
+
+.filter-input:disabled + label {
+  color: #a6a6a6;
+}
+
 .sort {
   color: #000000;
 
@@ -297,12 +413,44 @@ a {
   list-style: none;
 }
 
-.sort a {
+.sort-option a {
+  font-weight: 400;
   color: #000000;
+  opacity: 0.3;
+}
+
+.sort-up-down a {
+  font-weight: 400;
+  color: #000000;
+  opacity: 0.2;
+}
+
+.sort-option a:hover,
+.sort-option a:focus {
+  opacity: 0.6;
+}
+
+.sort-up-down a:hover,
+.sort-up-down a:focus {
+  opacity: 0.4;
+}
+
+.sort a:active {
+  opacity: 1;
+}
+
+a.sort-option-current,
+a.sort-up-down-current {
+  opacity: 1;
 }
 
 .catalog ul {
   list-style: none;
+}
+
+.catalog-item img:hover,
+.catalog-item img:focus {
+  opacity: 0.4;
 }
 
 .catalog-item-name {
@@ -330,6 +478,15 @@ a {
   color: #000000;
   letter-spacing: 0.13px;
   opacity: 0.5;
+}
+
+.catalog-button-compare:hover,
+.catalog-button-compare:focus {
+  opacity: 1;
+}
+
+.catalog-button-compare:active {
+  opacity: 0.2;
 }
 
 .pagination-list {
@@ -418,4 +575,25 @@ a {
 
   background-color: #f2f2f2;
   border: none;
+}
+
+.write-us-form input:hover,
+.write-us-form textarea:hover {
+  background-color: #eaeaea;
+}
+
+.write-us-form input:focus,
+.write-us-form input:active,
+.write-us-form textarea:focus,
+.write-us-form textarea:active {
+  color: #000000;
+
+  outline: none;
+  border: 2px solid #f7e296;
+  background-color: #ffffff;
+}
+
+.write-us-form input:invalid,
+.write-us-form textarea:invalid {
+  background-color: #f6dada;
 }
