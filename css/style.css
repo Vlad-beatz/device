@@ -49,11 +49,11 @@ a {
 
 .button:hover,
 .button:focus {
-  /* background-color: #663d15; */
+  background-color: #f0c52e;
 }
 
 .button:active  {
-  /* opacity: 0.3; */
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-header {
@@ -263,11 +263,13 @@ a {
 
 .logotypes-brands img {
   opacity: 0.2;
+  filter: grayscale(100%);
 }
 
 .logotypes-brands img:hover,
 .logotypes-brands img:focus {
   opacity: 1;
+  filter: grayscale(0%);
 }
 
 .info h2,
@@ -500,21 +502,56 @@ a.sort-up-down-current {
 
   background-color: #ebebeb;
 }
-.pagination-item a {
-  opacity: 0.3;
+
+.pagination-item-back a,
+.pagination-item-forward a {
   color: #000000;
 }
 
-.pagination-item-back a,
-.pagination-item-current a,
-.pagination-item-forward a {
-  opacity: 1;
+.pagination-item-back a:hover,
+.pagination-item-back a:focus,
+.pagination-item-forward a:hover,
+.pagination-item-forward a:focus {
+  background-color: #d9d9d9;
+}
+
+.pagination-item-back a:active,
+.pagination-item-forward a:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: #d9d9d9;
+}
+
+.pagination-item-number.pagination-item-current a{
+  color: #000000;
+}
+
+.pagination-item-number a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item-number a:hover,
+.pagination-item-number a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item-number a:active {
+  color: rgba(0, 0, 0, 1);
 }
 
 .main-footer {
   color: #ffffff;
 
   background-color: #464646;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  opacity: 0.6;
+}
+
+.footer-logo:active {
+  opacity: 0.3;
 }
 
 .main-footer ul {
@@ -524,9 +561,26 @@ a.sort-up-down-current {
 .footer-nav-user a,
 .footer-nav-shoping a {
   color: #ffffff;
+
+  opacity: 0.7;
 }
 
-.footer-nav-exit-link {
+.footer-nav-user a:hover,
+.footer-nav-user a:focus,
+.footer-nav-shoping a:hover,
+.footer-nav-shoping a:focus,
+.footer-nav-exit-link a:hover,
+.footer-nav-exit-link a:focus {
+  opacity: 1;
+}
+
+.footer-nav-user a:active,
+.footer-nav-shoping a:active,
+.footer-nav-exit-link a:active {
+  opacity: 0.3;
+}
+
+.footer-nav-exit-link a {
   opacity: 0.3;
 }
 
