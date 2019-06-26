@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
-    <title>Магазин гаджетов «Device»</title>
+    <title>Магазин гаджетов «Device», моноподы для селфи</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
     <header class="main-header">
        <a class="main-header-logo" href="index.html">
         <img src="img/index-logo.svg" width="164" height="36" alt="Логотип магазина «Device»">
       </a>
       <nav class="main-navigation">
-        <p class="main-nav-search">
+        <form class="main-nav-search" action="https://echo.htmlacademy.ru" method="get">
           <label class="visually-hidden" for="main-search-input">Поиск по сайту</label>
           <input class="main-nav-search-input" id="main-search-input" type="search" name="search" placeholder="Поиск по сайту">
-        </p>
-        <ul class="user-navigation">
-          <li class="user-nav-login"><a href="#">Валентин Петухов</a></li>
-          <li class="user-nav-exit-link"><a href="#">Выйти</a></li>
-        </ul>
-        <ul class="shopping-navigation">
-          <li class="shoping-nav-compare"><a href="#">Сравнить</a></li>
-          <li class="shoping-nav-basket"><a href="#">Корзина</a></li>
-        </ul>
+          <button class="search-btn" type="submit">Найти</button>
+        </form>
+        <div class="user-container">
+          <ul class="user-navigation">
+            <li class="user-nav-login"><a href="#">Валентин Петухов</a></li>
+            <li class="user-nav-exit-link"><a href="#">Выйти</a></li>
+          </ul>
+          <ul class="shopping-navigation">
+            <li class="shoping-nav-compare"><a href="#">Сравнить</a></li>
+            <li class="shoping-nav-basket"><a href="#">Корзина</a></li>
+          </ul>
+        </div>
         <div class="catalog-navigation-menu">
-          <span class="catalog-nav-button">Каталог товаров +</span>
+          <a class="catalog-nav-button" href="#">Каталог товаров +</a>
           <!-- выпадающее меню -->
           <ul class="catalog-navigation">
             <li><a href="#">Виртуальная реальность</a></li>
@@ -183,36 +188,40 @@
     </main>
 
     <footer class="main-footer">
-      <nav>
-        <a href="index.html"><img class="footer-logo" src="img/logo-footer.svg" width="163" height="36" alt="Логотип магазина «Device»"></a>
-        <ul class="footer-nav-user">
-          <li class="footer-nav-login"><a href="#">Валентин Петухов</a></li>
-          <li class="footer-nav-exit-link"><a href="#">Выйти</a></li>
-        </ul>
-        <ul class="footer-nav-shoping">
-          <li class="footer-compare-link"><a href="#">Сравнить</a></li>
-          <li class="footer-basket-link"><a href="#">Корзина</a></li>
-        </ul>
+      <div class="footer-top">
+        <nav>
+          <a href="#"><img class="footer-logo" src="img/logo-footer.svg" width="163" height="36" alt="Логотип магазина «Device»"></a>
+          <ul class="footer-nav-user">
+            <li class="footer-nav-login"><a href="#">Валентин Петухов</a></li>
+            <li class="footer-nav-exit-link"><a href="#">Выйти</a></li>
+          </ul>
+          <ul class="footer-nav-shoping">
+            <li class="footer-compare-link"><a href="#">Сравнить</a></li>
+            <li class="footer-basket-link"><a href="#">Корзина</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-middle">
+        <p class="footer-contact footer-contact-direction">г. Москва, ул. Строителей, 15</p>
         <ul class="footer-nav-site">
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-      </nav>
+        <p class="footer-contact footer-contact-tel">Тел.: +7 (495) 495-95-95</p>
+      </div>
 
-      <p class="footer-contact footer-contact-direction">г. Москва, ул. Строителей, 15</p>
-      <p class="footer-contact footer-contact-tel">Тел.: +7 (495) 495-95-95</p>
-
-      <div class="footer-social">
-        <ul>
+      <div class="footer-bottom">
+        <ul class="footer-social-btn">
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
           <li><a class="social-button" href="#">Твиттер</a></li>
         </ul>
+        <p class="footer-copyright">
+          <a class="button-copyright" href="https://htmlacademy.ru">HTML Academy</a>
+        </p>
       </div>
-      <p class="footer-copyright">
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-      </p>
     </footer>
   </body>
 </html>
