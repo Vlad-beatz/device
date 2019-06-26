@@ -112,6 +112,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  margin-bottom: 45px;
 }
 
 /*Навигация пользователя - Форма (Поиск по сайту)*/
@@ -158,6 +160,17 @@ a {
   margin: 0;
   padding: 0;
   margin-right: 80px;
+
+  list-style: none;
+}
+
+.user-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 220px;
+  margin: 0;
+  padding: 0;
 
   list-style: none;
 }
@@ -512,6 +525,8 @@ a {
 /*Страница каталога товаров*/
 
 .page-title {
+  margin-left: 60px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -520,7 +535,16 @@ a {
   letter-spacing: 0.47px;
 }
 
+/* Хлебные крошки */
+
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 45px;
+  margin-left: 60px;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -547,6 +571,12 @@ a {
 
 .breadcrumbs a:active {
   opacity: 0.1;
+}
+
+/*Обертка фильтра и каталога*/
+
+.wrapper-catalog {
+  display: flex;
 }
 
 .filters h2 {
