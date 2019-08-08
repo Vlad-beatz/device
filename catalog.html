@@ -65,7 +65,19 @@
           <form class="filter" method="post" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Стоимость</legend>
-              <input class="filter-price" type="range" name="price" aria-label="Диапазон цены">
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <lable class="min-price">от <input name="min-price" type="number" value="0"></lable>
+                  <lable class="max-price">до <input name="max-price" type="number" value="15000"></lable>
+                </div>
+              </div>
             </fieldset>
             <fieldset>
               <legend>Цвет</legend>
@@ -136,8 +148,10 @@
                   <img src="img/catalog-item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                 </p>
               </a>
-              <a class="button catalog-button-basket" href="#">В корзину</a>
-              <a class="catalog-button-compare" href="#">Добавить к сравнению</a>
+              <div class="catalog-actions">
+                <a class="button catalog-button-basket" href="#">В корзину</a> <br>
+                <a class="catalog-button-compare" href="#">Добавить к сравнению</a>
+              </div>
             </li>
             <li class="catalog-item">
               <a href="catalog-item.html">
@@ -149,8 +163,10 @@
                   <img src="img/catalog-item-2.jpg" width="360" height="380" alt="Профессиональная  селфи-палка">
                 </p>
               </a>
-              <a class="button catalog-button-basket" href="#">В корзину</a>
-              <a class="catalog-button-compare" href="#">Добавить к сравнению</a>
+              <div class="catalog-actions">
+                <a class="button catalog-button-basket" href="#">В корзину</a> <br>
+                <a class="catalog-button-compare" href="#">Добавить к сравнению</a>
+              </div>
             </li>
             <li class="catalog-item">
               <a href="catalog-item.html">
@@ -162,10 +178,13 @@
                   <img src="img/catalog-item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                 </p>
               </a>
-              <a class="button catalog-button-basket" href="#">В корзину</a>
-              <a class="catalog-button-compare" href="#">Добавить к сравнению</a>
+              <div class="catalog-actions">
+                <a class="button catalog-button-basket" href="#">В корзину</a> <br>
+                <a class="catalog-button-compare" href="#">Добавить к сравнению</a>
+              </div>
             </li>
             <li class="catalog-item">
+              <div class="flag flag-new">новинка</div>
               <a href="catalog-item.html">
                 <h3>
                   <span class="catalog-item-name">Селфи-палка «Следуй за мной»</span>
@@ -175,8 +194,10 @@
                   <img src="img/catalog-item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 </p>
               </a>
-              <a class="button catalog-button-basket" href="#">В корзину</a>
-              <a class="catalog-button-compare" href="#">Добавить к сравнению</a>
+              <div class="catalog-actions">
+                <a class="button catalog-button-basket" href="#">В корзину</a> <br>
+                <a class="catalog-button-compare" href="#">Добавить к сравнению</a>
+              </div>
             </li>
           </ul>
           <ul class="pagination-list">
